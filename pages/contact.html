@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<link rel="icon" type="image/x-icon" href="/images/favicon.ico"/>
+<link rel="apple-touch-icon" href="/images/icon-192.png"/>
+<link rel="preconnect" href="https://fonts.googleapis.com"/>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'"/>
+<noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet"/></noscript>
+<link rel="stylesheet" href="../assets/css/main.css"/>
+
+<title>Contact — LMV® · Lave Ma Voiture</title>
+<meta name="description" content="Contactez LMV : démo, inscription, questions. Réponse sous 24h."/>
+</head>
+<body>
+<nav id="nav">
+  <a class="nav-logo" href="../index.html">LMV®</a>
+  <ul class="nav-links">
+    <li><a href="particuliers.html">Particuliers</a></li>
+    <li><a href="professionnels.html">Professionnels</a></li>
+    <li><a href="prestataires.html">Prestataires</a></li>
+    <li><a href="../index.html#faq-section">FAQ</a></li>
+    <li><a href="contact.html" class="active">Contact</a></li>
+  </ul>
+  <div class="nav-cta">
+    <a class="btn btn-ghost btn-sm" href="https://app.lavemavoiture.fr">Se connecter</a>
+    <a class="btn btn-dark btn-sm" href="contact.html">Réserver</a>
+  </div>
+  <button class="hamburger" type="button" onclick="toggleMenu()" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</nav>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="particuliers.html">Particuliers</a>
+  <a href="professionnels.html">Professionnels</a>
+  <a href="prestataires.html">Prestataires</a>
+  <a href="../index.html#faq-section">FAQ</a>
+  <a href="contact.html">Contact</a>
+  <div class="mob-cta">
+    <a href="https://app.lavemavoiture.fr" class="btn btn-ghost">Se connecter</a>
+    <a class="btn btn-dark" href="contact.html">Réserver maintenant</a>
+  </div>
+</div>
+
+
+<main>
+<div class="inner-hero">
+    <div class="container">
+      <div class="eyebrow reveal">Contact</div>
+      <h1 class="reveal">Parlons de<br>votre projet.</h1>
+      <p class="hero-sub reveal">Une question, une demande de démo ou une inscription ? Notre équipe vous répond sous 24h.</p>
+    </div>
+  </div>
+
+  <section id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info reveal">
+          <h2>On est là<br>pour vous.</h2>
+          <p>Que vous soyez particulier, professionnel ou prestataire, notre équipe répond à toutes vos questions.</p>
+          <div class="contact-item">
+            <div class="ci-icon">✉</div>
+            <div><div class="ci-label">Email</div><div class="ci-value">hello@lavemavoiture.fr</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">📍</div>
+            <div><div class="ci-label">Siège</div><div class="ci-value">France</div></div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon">⏱</div>
+            <div><div class="ci-label">Réponse</div><div class="ci-value">Sous 24h ouvrées</div></div>
+          </div>
+          <div style="margin-top:40px;padding:24px;background:var(--surface);border:1px solid var(--border)">
+            <div style="font-size:.7rem;font-weight:700;letter-spacing:.1em;text-transform:uppercase;color:var(--t1);margin-bottom:8px">🚀 Lancement en cours</div>
+            <p style="font-size:.875rem;color:var(--t2);line-height:1.65">LMV est en phase de lancement. En vous inscrivant maintenant, vous serez parmi les premiers informés et aurez accès à nos offres exclusives.</p>
+          </div>
+        </div>
+
+        <div class="contact-form reveal reveal-delay-1">
+          <div style="font-size:.7rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase;margin-bottom:28px">Nous contacter</div>
+          <form action="https://formspree.io/f/mkokynzn" method="POST">
+          <input type="hidden" name="_subject" value="Nouveau message LMV — lavemavoiture.fr"/>
+          <div class="form-row">
+            <div class="form-group"><label for="contact-prenom">Prénom *</label><input id="contact-prenom" type="text" name="prenom" placeholder="Jean" required/></div>
+            <div class="form-group"><label for="contact-nom">Nom *</label><input id="contact-nom" type="text" name="nom" placeholder="Dupont" required/></div>
+          </div>
+          <div class="form-group"><label for="contact-email">Email *</label><input id="contact-email" type="email" name="email" placeholder="jean.dupont@email.fr" required/></div>
+          <div class="form-group"><label for="contact-telephone">Téléphone</label><input id="contact-telephone" type="tel" name="telephone" placeholder="+33 6 00 00 00 00"/></div>
+          <div class="form-group">
+            <label for="contact-profil">Je suis *</label>
+            <select id="contact-profil" name="profil" required>
+              <option value="">Sélectionner...</option>
+              <option>Un particulier</option>
+              <option>Un professionnel / entreprise</option>
+              <option>Un prestataire lavage auto</option>
+              <option>Autre</option>
+            </select>
+          </div>
+          <div class="form-group"><label for="contact-message">Message</label><textarea id="contact-message" name="message" placeholder="Décrivez votre besoin ou posez votre question..."></textarea></div>
+          <button class="form-submit" type="submit">Envoyer le message</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a class="nav-logo footer-brand-logo" href="../index.html" style="font-size:1.25rem;font-weight:900;letter-spacing:-.04em;color:var(--bg);cursor:pointer;text-decoration:none;display:block;margin-bottom:16px">LMV®</a>
+        <p>La plateforme qui connecte clients et professionnels du lavage automobile. Votre voiture est propre, sans que vous n'ayez à bouger.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Service</h4>
+        <a href="particuliers.html">Pour les particuliers</a>
+        <a href="professionnels.html">Pour les professionnels</a>
+        <a href="prestataires.html">Pour les prestataires</a>
+      </div>
+      <div class="footer-col">
+        <h4>Support</h4>
+        <a href="../index.html#faq-section">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Légal</h4>
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 LaveMaVoiture® — Tous droits réservés</span>
+      <div style="display:flex;gap:20px">
+        <a href="mentions-legales.html">Mentions légales</a>
+        <a href="cgu.html">CGU</a>
+        <a href="contact.html">Contact</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast">✓ Message envoyé — Nous vous répondrons sous 24h.</div>
+
+<script src="../assets/js/main.js"></script>
+
+</body>
+</html>
