@@ -1,5 +1,5 @@
 const CACHE_NAME = 'lavemavoiture-v1';
-const FONT_CSS = 'https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap';
+const FONT_CSS = 'https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&display=swap';
 
 const PRECACHE_URLS = [
   '/index.html',
